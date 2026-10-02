@@ -1,7 +1,11 @@
 # Validation — 2026-10-02
 
-35 native tests passed: 31 model/persistence tests and four UI flows. Tests cover full training, hard paywall, swaps/history/repeated sessions, and full personalised onboarding with plan edits. DEBUG test access does not prove real StoreKit purchases.
+Current reward changes: 33 model/persistence tests passed, including eligibility boundaries, rest-only attempts, recorded time, repeat sessions, idempotent saving and StoreKit entitlement validity. UI reward/completion, persistence after relaunch and Settings policy links passed at normal and XXXL text sizes (`formea-rewards-verified.xcresult`, two successful UI cases; its initial paywall link case revealed an obscured control and was fixed separately).
 
-All four local HTML pages respond with HTTP 200 and have no horizontal overflow at 390 px. Draft banners are visible. `python3 build.py --release` correctly refuses the absent provider fields. The iOS manifest passes plist validation and is copied into the application bundle. Final signed archive and production privacy report remain required.
+The final hard-paywall UI test passed in `formea-paywall-legal-verified.xcresult`: full onboarding and plan summary precede the gate; no app tabs before verified access; preview purchase does not grant access; gate survives relaunch; privacy/support pages are accessible before purchase at normal and XXXL text sizes. Legal controls now have minimum 44-point tap targets in the fixed footer. The separate daily-flow test passed after the new threshold copy was corrected (`formea-earned-final.log`); this exploratory run was interrupted before remaining cases because reward eligibility was subsequently tightened to exclude wind-down.
 
-Repository is private staging. No public policy link is claimed live. No customer data or application source has been uploaded.
+Latest Release arm64 iOS Simulator build passed (`formea-release-legal-final.log`). DEBUG-only reward fixtures and subscriber simulations are not real purchase tests. Real StoreKit products, Sandbox/TestFlight purchase/restore coverage and a signed distribution archive remain required.
+
+GitHub Pages workflow completed successfully. Privacy, terms and support URLs respond HTTP 200. Provider is Normann Jungbauer (Formea), contact clavic.ai.app@gmail.com. The repository is now public and contains legal pages/release preparation only, not customer data or application source. Actual postal address and country have not been supplied; applicable regional provider/trader disclosures remain open.
+
+The earlier website review found no horizontal overflow at 390 px; this update retained that layout and changed provider/contact and progress wording. Native screenshot attachments, normal/XXXL contact sheets and simulator motion recordings were reviewed. The privacy manifest passed plist validation and bundle inclusion in the preceding audit; recheck the final signed archive and privacy report before submission.
