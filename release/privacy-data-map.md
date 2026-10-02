@@ -4,7 +4,7 @@
 |---|---|---|---|
 | Onboarding answers, goals, activity, movement preferences | Local JSON in app sandbox | Rule-based plan ordering and variants | `OnboardingView.swift`, `Personalization.swift`, `AppStore.swift` |
 | Schedule and reminders | Local state and iOS local notification scheduler | User-selected reminders | `Plan.swift` |
-| Energy check-in, workout dates, actual time, exercise status, feedback, optional body ratings | Local JSON | Adapt today's session, resume, show progress/history | `Models.swift`, `AppStore.swift`, `RitualViews.swift` |
+| Energy check-in, workout dates, actual time, exercise status, feedback, optional body ratings | Local JSON | Adapt today's session, resume, show progress/history and derive local XP/levels | `Models.swift`, `AppStore.swift`, `RitualViews.swift` |
 | Product identifiers and verified subscription entitlement, expiration/revocation | Apple StoreKit and on-device entitlement check | Purchases and access control | `PaywallView.swift` |
 | Payment details | Apple | App Store billing | Developer receives no card data through this source |
 | Voluntary support email and attachments | Provider mailbox; mail providers | Respond to a user request | Public support operation, not automatic app telemetry |

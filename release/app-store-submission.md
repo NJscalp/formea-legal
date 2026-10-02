@@ -5,7 +5,7 @@
 - Replace workout video placeholders with reviewed demonstrations or another finished, accurate way of teaching every available exercise and variation. The current player visibly says content is pending. Do not market finished videos before they exist.
 - Obtain professional review of the exercise instructions, variations, replacement equivalence and 24-session progression. The app currently explicitly describes these as drafts.
 - Verify rights to the actual bundled paywall photo and all other assets. The latest reference-pose image was generated with a third-party photo as reference; alteration or generation alone is not proof of rights or non-resemblance. Use licensed or independently created assets with documented provenance where rights are uncertain.
-- Complete provider and contact details; publish and test policy/support pages publicly. Add functional privacy and support links to Settings and the paywall. A short private policy sheet alone does not replace public policy hosting.
+- Legal name and contact are now Normann Jungbauer (Formea), clavic.ai.app@gmail.com. Public privacy, terms and support pages are live and linked in Settings and before purchase. Obtain the actual business postal address and country for applicable regional provider/trader disclosures; these have not been supplied.
 - Create auto-renewable subscription products `com.formea.plus.weekly` and `com.formea.plus.sixmonths` in one subscription group. Intended US prices: $9.99 weekly and $45.99 every six months. The app must display Apple's localised prices. Configure availability, product localisation, review screenshots, tax/banking agreements and subscription review metadata.
 - Test real StoreKit purchase, cancellation, pending purchase, restore, expiry, revocation, billing retry/grace if configured, and product-unavailable behavior using a StoreKit test configuration and Sandbox/TestFlight. Current UI access tests use DEBUG-only simulation and do not prove a successful Apple purchase.
 - Demonstrate ongoing membership value; 24 static sessions with unfinished media are a weak offer for recurring billing. Apple requires ongoing value (3.1.2(a)); new content is one possible approach, not a mandatory prescribed feature.
@@ -14,9 +14,9 @@
 
 Name: Formea (check availability). Subtitle candidate: `Pilates at your own pace` (23 characters). Category: Health & Fitness. iPhone only in the current target; minimum iOS 18.
 
-Privacy URL after publication: `https://njscalp.github.io/formea-legal/privacy.html`
+Live privacy URL: `https://njscalp.github.io/formea-legal/privacy.html`
 
-Support URL after publication: `https://njscalp.github.io/formea-legal/support.html`
+Live support URL: `https://njscalp.github.io/formea-legal/support.html`
 
 Marketing URL, optional: `https://njscalp.github.io/formea-legal/`
 
@@ -30,15 +30,15 @@ Supply developer legal identity, app-review contact email and telephone, real co
 
 Make a little space for Pilates. Formea builds a starting plan around your goals, experience, movement preferences and time, so your next session is easy to find.
 
-Explore 24 sessions across four chapters. Choose 5, 10 or 15 minutes, use a gentler variation, swap supported exercises and schedule optional reminders. A daily check-in can help you choose a gentler session. See your recorded workouts and active minutes, revisit saved flows and record extra sessions separately.
+Explore 24 sessions across four chapters. Choose 5, 10 or 15 minutes, use a gentler variation, swap supported exercises and schedule optional reminders. A daily check-in can help you choose a gentler session. See your recorded workouts and active minutes, revisit saved flows and record extra sessions separately. Earn practice points and five lasting levels through completed sessions; rest days do not reset your progress.
 
 No Formea account is needed. Your plan and workout history stay on your iPhone. Formea Plus is required for workouts and subscriber features. Available subscriptions are weekly and six-monthly; local prices and billing details are shown before purchase. Subscriptions renew automatically unless cancelled. Manage renewal in your Apple Account subscriptions. Deleting the app does not cancel a subscription.
 
 Formea provides general fitness guidance and does not replace medical advice. Results vary; no specific body change is promised.
 
-Privacy: [add verified public URL]
+Privacy: https://njscalp.github.io/formea-legal/privacy.html
 Terms: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-Membership: [add verified Formea terms URL]
+Membership: https://njscalp.github.io/formea-legal/terms.html
 
 This draft intentionally makes no finished-video claims. Publish only after the actual shipped teaching content is complete and this description accurately describes it.
 
