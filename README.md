@@ -1,6 +1,6 @@
 # Formea — legal and release preparation
 
-**Draft. Not yet suitable for App Store submission.** The provider must supply its legal name, postal address, country and public contact email. The documents describe the current source code, not hypothetical future analytics or cloud services.
+**Release preparation; app submission blockers remain.** Provider: Normann Jungbauer, under the Formea brand. Contact: clavic.ai.app@gmail.com. The provider has not supplied a postal address or country; jurisdiction-specific business/trader disclosures still need those real details. No address is invented. The documents describe the current source code, not hypothetical future analytics or cloud services.
 
 ## Pages
 
@@ -9,13 +9,13 @@
 - `site/support.html`: contact and troubleshooting.
 - `site/index.html`: public information hub.
 
-Edit `provider.json`, then run `python3 build.py --release`. This command refuses missing provider details. Preview locally at `/legal/site/` on the Formea development server. No external fonts, scripts, analytics or contact form are included.
+Edit `provider.json`, then run `python3 build.py --release`. This command refuses missing legal identity, contact email or website URL. Postal address and country are optional site fields until supplied; this does not certify compliance with jurisdiction-specific provider disclosures. Preview locally at `/legal/site/` on the Formea development server. No external fonts, scripts, analytics or contact form are included.
 
 ## GitHub Pages publication
 
-The repository is staged privately until the provider details are supplied. Intended repository: `NJscalp/formea-legal`; intended public base URL: `https://njscalp.github.io/formea-legal/`. These are intended URLs, not verified live links.
+Repository: `NJscalp/formea-legal`; public base URL after deployment: `https://njscalp.github.io/formea-legal/`.
 
-Once provider details are complete, rebuild with `--release`, commit the completed pages and make the repository public. Enable GitHub Pages with GitHub Actions and run the included manual deployment workflow. Check all public URLs without authentication before adding them to the iOS app and App Store Connect. Do not submit draft pages.
+The public policy and support pages identify the actual provider and contact email. GitHub Pages uses the included workflow. Check all public URLs without authentication before adding them to App Store Connect. Complete postal/trader information before submission wherever applicable; this repository cannot infer the provider's business jurisdiction.
 
 Only legal-site content and release instructions belong in this repository. No Swift source, user state, screenshots, credentials or app assets are included.
 
